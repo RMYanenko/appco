@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AppCo"
+    }
+  },
+  "defaultProject": "AppCo",
+  "cli": {
+    "analytics": false
+  }
 }
