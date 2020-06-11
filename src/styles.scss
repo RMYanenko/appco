@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+$color-blue: #3A80BA;
+$color-dark-blue: #1C3B55;
+
+/* You can add global styles to this file, and also import other style files */
+body,
+html {
+  padding: 0;
+  margin: 0;
+  // height: 100%;
+  // width: 100%;
+}
+
+header {
+  background-color: $color-blue;
+  height: 72px;
+  left: 0;
+  top: 0;
+}
+.container{
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+footer {
+  background-color: $color-dark-blue;
+}
+
