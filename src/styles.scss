@@ -1,29 +1,83 @@
 /* You can add global styles to this file, and also import other style files */
 $color-blue: #3A80BA;
 $color-dark-blue: #1C3B55;
+$color-text-white: white;
+$color-text-dark: #1A1A1A;
 
 /* You can add global styles to this file, and also import other style files */
 body,
 html {
   padding: 0;
   margin: 0;
-  // height: 100%;
-  // width: 100%;
+  min-height: 100%;
+  display: grid;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
 }
+
+.page {min-height: 100vh; display: grid; grid-template-rows: auto 1fr auto;}
 
 header {
   background-color: $color-blue;
-  height: 72px;
-  left: 0;
-  top: 0;
+  color: $color-text-white;
+  display: grid;
+  .header-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 0;
+    padding: 10px 0;
+  }
 }
 .container{
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0;
   width: 100%;
 }
 
-footer {
-  background-color: $color-dark-blue;
+.footer {
+  background: $color-dark-blue;
+  color: white;
+  padding: 20px;
 }
 
+table {
+  width: 100%;
+  text-align: center;
+  color: $color-text-dark;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  thead
+    {
+    font-size: 16px;
+    text-align: left;
+    color: $color-text-white;
+    background-color: $color-blue;
+    tr:first-child {
+      th:first-child { border-top-left-radius: 8px; }
+      th:last-child { border-top-right-radius: 8px; }
+    }
+    tr {
+      th {
+        padding-left: 2rem;
+        padding-top: 14px;
+        padding-bottom: 14px;
+      }
+      th:first-child {
+        text-align: center;
+        padding: 5px;
+      }
+    }
+  }
+  tbody {
+    background: #FBFBFB;
+    td {
+      line-height: 2em;
+    }
+    tr:nth-child(2n) {background: #F1F1F1;}
+  }
+}

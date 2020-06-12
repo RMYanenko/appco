@@ -1,16 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-export interface UsersStat {
-  id: number,
-  firstName: string,
-  lastName: string,
-  email: string,
-  gender: string,
-  totalClicks: number,
-  totalPageViews: number,
-  ipAddress: string
-}
-
 @Component({
   selector: 'app-user-page',
   templateUrl: './user-page.component.html',

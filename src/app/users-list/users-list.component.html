@@ -1,1 +1,27 @@
-<p>users-list works!</p>
+<h2>{{titlePage}}</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+      <th>gender</th>
+      <th>Ip address</th>
+      <th>Total Clicks</th>
+      <th>Total Page Views</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of usersStats">
+      <td>{{user.id}}</td>
+      <td>{{user.firstName}}</td>
+      <td>{{user.lastName}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.gender}}</td>
+      <td>{{user.ipAddress}}</td>
+      <td>{{user.totalClicks}}</td>
+      <td>{{user.totalPageViews}}</td>
+    </tr>
+  </tbody>
+</table>
